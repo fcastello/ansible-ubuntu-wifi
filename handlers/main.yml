@@ -1,6 +1,4 @@
----
-
-  
+---  
 - name:       Generating Netplan Configuration
   command:    netplan generate
   listen:     netplan generate config

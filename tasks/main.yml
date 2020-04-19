@@ -1,6 +1,5 @@
 ---
-
-- name: Copy netplan template 
+- name: Copy netplan template
   template:
     src: wifi.yaml.j2
     dest: "{{ ansible_netplan_wifi_dir }}{{ ansible_netplan_wifi_file }}"
