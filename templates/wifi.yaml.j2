@@ -1,0 +1,8 @@
+network:
+  version: 2
+  wifis:
+    {{ ansible_netplan_wifi_if }}:
+      access-points:
+        {{ ansible_netplan_wifi_ssid }}:
+          password: {{ ansible_netplan_wifi_password }}
+      dhcp4: true

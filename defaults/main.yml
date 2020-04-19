@@ -1,0 +1,13 @@
+---
+# Wifi interface
+ansible_netplan_wifi_if: wlan0
+# SSID of wireless network
+ansible_netplan_wifi_ssid: my-wifi
+# Beware that running it in this the password might be disclosed to public, 
+# it's up to the person implementing the playbook to keep the password secure
+# I suggest to set this variables in an ansible vault files, or asking for the password interactively using ansible prompts. 
+# Never store the password in plain text
+ansible_netplan_wifi_password: mySecurePassword
+
+ansible_netplan_wifi_dir: /etc/netplan/
+ansible_netplan_wifi_file: 70-ansible-wifi.yaml
